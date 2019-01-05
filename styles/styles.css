@@ -1,11 +1,11 @@
 @font-face {
     font-family: Poppins Regular; /*a name to be used later*/
-    src: url('../assets/Poppins-Regular.ttf'); /*URL to font*/
+    src: url('../assets/font/Poppins-Regular.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: Montserrat Bold; /*a name to be used later*/
-    src: url('../assets/Montserrat-Bold.ttf'); /*URL to font*/
+    src: url('../assets/font/Montserrat-Bold.ttf'); /*URL to font*/
 }
 
 .modal-wrapper {
