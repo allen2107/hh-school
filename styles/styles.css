@@ -163,7 +163,8 @@
     font-family: Montserrat Bold, serif;
 }
 
-.contact-form-submit-btn:hover {
+.contact-form-submit-btn:hover,
+.contact-form-submit-btn:focus{
     background-color: #333333;
 }
 
