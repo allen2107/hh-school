@@ -107,9 +107,8 @@
 .contact-form-item__input {
     height: 55px;
     width: 100%;
-    margin-top: 0;
+    margin-top: -1px;
     border: 1px solid #DBDBDB;
-    border-top: none;
     font-size: 18px;
     /*color: #666;*/
     padding: 0 25px;
@@ -117,19 +116,34 @@
 
 .contact-form-item__input:first-of-type {
     margin-top: 10px;
-    border: 1px solid #DBDBDB;
 }
 
-.contact-form-item__input:active,
+@-webkit-keyframes input-click {
+    from {
+        outline-offset: 14px;
+    }
+    to {
+        outline-offset: 0;
+    }
+}
+
+@keyframes input-click {
+    from {
+        outline-offset: 14px;
+    }
+    to {
+        outline-offset: -1px;
+    }
+}
+
 .contact-form-item__input:focus {
-    outline: none;
+    position: relative;
+    z-index: 1;
     border: 1px solid #DBDBDB !important;
-    border-top: none !important;
-}
-
-.contact-form-item__input:active:first-of-type,
-.contact-form-item__input:focus:first-of-type {
-    border: 1px solid #DBDBDB !important;
+    animation: input-click 0.4s linear;
+    -webkit-animation: input-click 0.4s linear;
+    outline: 1px solid #00ad5f;
+    outline-offset: -1px;
 }
 
 .contact-form-item__input::-webkit-input-placeholder,
@@ -149,7 +163,7 @@
     font-family: Montserrat Bold, serif;
 }
 
-.contact-form-submit-btn:active {
-    color: #333333;
+.contact-form-submit-btn:hover {
+    background-color: #333333;
 }
 
